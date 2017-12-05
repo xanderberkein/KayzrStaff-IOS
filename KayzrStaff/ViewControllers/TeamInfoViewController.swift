@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KayzrStaff_Shared
 
 class TeamInfoViewController : UITableViewController {
     @IBOutlet weak var teamTable : UITableView!

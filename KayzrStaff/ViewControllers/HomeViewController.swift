@@ -1,4 +1,5 @@
 import UIKit
+import KayzrStaff_Shared
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!

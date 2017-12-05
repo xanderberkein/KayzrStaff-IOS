@@ -1,5 +1,6 @@
 import UIKit
 
+import KayzrStaff_Shared
 class AvailabilityCell: UITableViewCell {
     @IBOutlet weak var tournamentNameLabel: UILabel!
     @IBOutlet weak var tournamentHourLabel: UILabel!

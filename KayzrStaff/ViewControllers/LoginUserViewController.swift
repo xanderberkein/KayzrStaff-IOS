@@ -1,5 +1,5 @@
 import UIKit
-
+import KayzrStaff_Shared
 class LoginUserViewController : UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!

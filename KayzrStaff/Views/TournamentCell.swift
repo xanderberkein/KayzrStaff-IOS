@@ -1,4 +1,5 @@
 import UIKit
+import KayzrStaff_Shared
 
 class TournamentCell: UITableViewCell {
     

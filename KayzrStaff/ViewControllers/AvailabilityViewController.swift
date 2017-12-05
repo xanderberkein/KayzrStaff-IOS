@@ -1,5 +1,5 @@
 import UIKit
-
+import KayzrStaff_Shared
 class AvailabilityViewController : UIViewController {
     @IBOutlet weak var availabiltyTable: UITableView!
     @IBOutlet weak var sendAvailabilitiesButton: UIBarButtonItem!

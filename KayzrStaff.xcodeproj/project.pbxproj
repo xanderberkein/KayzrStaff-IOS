@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BF6564E1FD6C27700A943B8 /* games.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF6564D1FD6C27700A943B8 /* games.xcassets */; };
 		6BFE541F1FD69D8A001F127F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE541E1FD69D8A001F127F /* AppDelegate.swift */; };
 		6BFE54241FD69D8A001F127F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE54221FD69D8A001F127F /* Main.storyboard */; };
 		6BFE54261FD69D8A001F127F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE54251FD69D8A001F127F /* Assets.xcassets */; };
 		6BFE54291FD69D8A001F127F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE54271FD69D8A001F127F /* LaunchScreen.storyboard */; };
-		6BFE54721FD6A091001F127F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54711FD6A091001F127F /* User.swift */; };
-		6BFE54741FD6A09C001F127F /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54731FD6A09C001F127F /* Tournament.swift */; };
-		6BFE54761FD6A0B3001F127F /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54751FD6A0B3001F127F /* Availability.swift */; };
-		6BFE54781FD6A0C0001F127F /* EndWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54771FD6A0C0001F127F /* EndWeek.swift */; };
 		6BFE547A1FD6A111001F127F /* LoginUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54791FD6A111001F127F /* LoginUserViewController.swift */; };
 		6BFE547C1FD6A122001F127F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE547B1FD6A122001F127F /* HomeViewController.swift */; };
 		6BFE547E1FD6A133001F127F /* ThisWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE547D1FD6A133001F127F /* ThisWeekViewController.swift */; };
@@ -25,9 +22,20 @@
 		6BFE54881FD6A270001F127F /* AvailabilityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54871FD6A270001F127F /* AvailabilityCell.swift */; };
 		6BFE548A1FD6A27D001F127F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54891FD6A27D001F127F /* HeaderCell.swift */; };
 		6BFE548C1FD6A287001F127F /* TeamInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE548B1FD6A287001F127F /* TeamInfoCell.swift */; };
-		6BFE54941FD6A6F3001F127F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54931FD6A6F3001F127F /* ShareViewController.swift */; };
-		6BFE54971FD6A6F3001F127F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE54951FD6A6F3001F127F /* MainInterface.storyboard */; };
-		6BFE549B1FD6A6F3001F127F /* KayzrStaffShared.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6BFE54911FD6A6F3001F127F /* KayzrStaffShared.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6BFE54A71FD6A78D001F127F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54A61FD6A78D001F127F /* NotificationCenter.framework */; };
+		6BFE54AA1FD6A78D001F127F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54A91FD6A78D001F127F /* TodayViewController.swift */; };
+		6BFE54AD1FD6A78D001F127F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE54AB1FD6A78D001F127F /* MainInterface.storyboard */; };
+		6BFE54B11FD6A78D001F127F /* KayzrStaffToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6BFE54A41FD6A78D001F127F /* KayzrStaffToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6BFE54B91FD6AE35001F127F /* TournamentTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54B81FD6AE35001F127F /* TournamentTodayCell.swift */; };
+		6BFE54C31FD6AFC0001F127F /* KayzrStaff_Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFE54C11FD6AFC0001F127F /* KayzrStaff_Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BFE54C61FD6AFC0001F127F /* KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; };
+		6BFE54C71FD6AFC0001F127F /* KayzrStaff_Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BFE54CC1FD6AFDE001F127F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54711FD6A091001F127F /* User.swift */; };
+		6BFE54CF1FD6AFEE001F127F /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54731FD6A09C001F127F /* Tournament.swift */; };
+		6BFE54D01FD6AFEE001F127F /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54751FD6A0B3001F127F /* Availability.swift */; };
+		6BFE54D11FD6AFEE001F127F /* EndWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54771FD6A0C0001F127F /* EndWeek.swift */; };
+		6BFE54D21FD6B06B001F127F /* KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; };
+		754F9B629508CC564511EADE /* Pods_KayzrStaff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBC65F80E9EEF5DDAF4F28E /* Pods_KayzrStaff.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +53,19 @@
 			remoteGlobalIDString = 6BFE541A1FD69D8A001F127F;
 			remoteInfo = KayzrStaff;
 		};
-		6BFE54991FD6A6F3001F127F /* PBXContainerItemProxy */ = {
+		6BFE54AF1FD6A78D001F127F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6BFE54131FD69D8A001F127F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6BFE54901FD6A6F3001F127F;
-			remoteInfo = KayzrStaffShared;
+			remoteGlobalIDString = 6BFE54A31FD6A78D001F127F;
+			remoteInfo = KayzrStaffToday;
+		};
+		6BFE54C41FD6AFC0001F127F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BFE54131FD69D8A001F127F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BFE54BE1FD6AFC0001F127F;
+			remoteInfo = KayzrStaff_Shared;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,14 +76,27 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				6BFE549B1FD6A6F3001F127F /* KayzrStaffShared.appex in Embed App Extensions */,
+				6BFE54B11FD6A78D001F127F /* KayzrStaffToday.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFE54CB1FD6AFC0001F127F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6BFE54C71FD6AFC0001F127F /* KayzrStaff_Shared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BBC65F80E9EEF5DDAF4F28E /* Pods_KayzrStaff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF6564D1FD6C27700A943B8 /* games.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = games.xcassets; sourceTree = "<group>"; };
 		6BFE541B1FD69D8A001F127F /* KayzrStaff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KayzrStaff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFE541E1FD69D8A001F127F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BFE54231FD69D8A001F127F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,10 +119,18 @@
 		6BFE54871FD6A270001F127F /* AvailabilityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityCell.swift; sourceTree = "<group>"; };
 		6BFE54891FD6A27D001F127F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		6BFE548B1FD6A287001F127F /* TeamInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoCell.swift; sourceTree = "<group>"; };
-		6BFE54911FD6A6F3001F127F /* KayzrStaffShared.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KayzrStaffShared.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BFE54931FD6A6F3001F127F /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		6BFE54961FD6A6F3001F127F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		6BFE54981FD6A6F3001F127F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BFE54A41FD6A78D001F127F /* KayzrStaffToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KayzrStaffToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFE54A61FD6A78D001F127F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6BFE54A91FD6A78D001F127F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6BFE54AC1FD6A78D001F127F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6BFE54AE1FD6A78D001F127F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BFE54B51FD6A959001F127F /* KayzrStaffToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KayzrStaffToday.entitlements; sourceTree = "<group>"; };
+		6BFE54B81FD6AE35001F127F /* TournamentTodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTodayCell.swift; sourceTree = "<group>"; };
+		6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KayzrStaff_Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFE54C11FD6AFC0001F127F /* KayzrStaff_Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KayzrStaff_Shared.h; sourceTree = "<group>"; };
+		6BFE54C21FD6AFC0001F127F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E4A988FEC51A1958CC418A /* Pods-KayzrStaff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.release.xcconfig"; sourceTree = "<group>"; };
+		FA6BB464B8A38158CC30756C /* Pods-KayzrStaff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFE54C61FD6AFC0001F127F /* KayzrStaff_Shared.framework in Frameworks */,
+				754F9B629508CC564511EADE /* Pods_KayzrStaff.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +157,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BFE548E1FD6A6F3001F127F /* Frameworks */ = {
+		6BFE54A11FD6A78D001F127F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFE54D21FD6B06B001F127F /* KayzrStaff_Shared.framework in Frameworks */,
+				6BFE54A71FD6A78D001F127F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFE54BB1FD6AFC0001F127F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -129,12 +176,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46A0BA409113DA93EC607DC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA6BB464B8A38158CC30756C /* Pods-KayzrStaff.debug.xcconfig */,
+				F2E4A988FEC51A1958CC418A /* Pods-KayzrStaff.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6BFE54121FD69D8A001F127F = {
 			isa = PBXGroup;
 			children = (
 				6BFE541D1FD69D8A001F127F /* KayzrStaff */,
-				6BFE54921FD6A6F3001F127F /* KayzrStaffShared */,
+				6BFE54A81FD6A78D001F127F /* KayzrStaffToday */,
+				6BFE54C01FD6AFC0001F127F /* KayzrStaff_Shared */,
+				6BFE54A51FD6A78D001F127F /* Frameworks */,
 				6BFE541C1FD69D8A001F127F /* Products */,
+				46A0BA409113DA93EC607DC4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +203,8 @@
 				6BFE541B1FD69D8A001F127F /* KayzrStaff.app */,
 				6BFE542F1FD69D8A001F127F /* KayzrStaffTests.xctest */,
 				6BFE543A1FD69D8B001F127F /* KayzrStaffUITests.xctest */,
-				6BFE54911FD6A6F3001F127F /* KayzrStaffShared.appex */,
+				6BFE54A41FD6A78D001F127F /* KayzrStaffToday.appex */,
+				6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,12 +212,10 @@
 		6BFE541D1FD69D8A001F127F /* KayzrStaff */ = {
 			isa = PBXGroup;
 			children = (
-				6BFE54701FD6A07B001F127F /* Models */,
 				6BFE546F1FD6A069001F127F /* ViewControllers */,
 				6BFE546E1FD6A03B001F127F /* Views */,
 				6BFE541E1FD69D8A001F127F /* AppDelegate.swift */,
 				6BFE54221FD69D8A001F127F /* Main.storyboard */,
-				6BFE54251FD69D8A001F127F /* Assets.xcassets */,
 				6BFE54271FD69D8A001F127F /* LaunchScreen.storyboard */,
 				6BFE542A1FD69D8A001F127F /* Info.plist */,
 			);
@@ -199,32 +257,71 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		6BFE54921FD6A6F3001F127F /* KayzrStaffShared */ = {
+		6BFE54A51FD6A78D001F127F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BFE54931FD6A6F3001F127F /* ShareViewController.swift */,
-				6BFE54951FD6A6F3001F127F /* MainInterface.storyboard */,
-				6BFE54981FD6A6F3001F127F /* Info.plist */,
+				6BFE54A61FD6A78D001F127F /* NotificationCenter.framework */,
+				1BBC65F80E9EEF5DDAF4F28E /* Pods_KayzrStaff.framework */,
 			);
-			path = KayzrStaffShared;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BFE54A81FD6A78D001F127F /* KayzrStaffToday */ = {
+			isa = PBXGroup;
+			children = (
+				6BFE54B51FD6A959001F127F /* KayzrStaffToday.entitlements */,
+				6BFE54A91FD6A78D001F127F /* TodayViewController.swift */,
+				6BFE54AB1FD6A78D001F127F /* MainInterface.storyboard */,
+				6BFE54AE1FD6A78D001F127F /* Info.plist */,
+				6BFE54B81FD6AE35001F127F /* TournamentTodayCell.swift */,
+				6BF6564D1FD6C27700A943B8 /* games.xcassets */,
+			);
+			path = KayzrStaffToday;
+			sourceTree = "<group>";
+		};
+		6BFE54C01FD6AFC0001F127F /* KayzrStaff_Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6BFE54701FD6A07B001F127F /* Models */,
+				6BFE54C11FD6AFC0001F127F /* KayzrStaff_Shared.h */,
+				6BFE54251FD69D8A001F127F /* Assets.xcassets */,
+				6BFE54C21FD6AFC0001F127F /* Info.plist */,
+			);
+			path = KayzrStaff_Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BFE54BC1FD6AFC0001F127F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFE54C31FD6AFC0001F127F /* KayzrStaff_Shared.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6BFE541A1FD69D8A001F127F /* KayzrStaff */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BFE54431FD69D8B001F127F /* Build configuration list for PBXNativeTarget "KayzrStaff" */;
 			buildPhases = (
+				2FEED61BA9EF109FC1D64750 /* [CP] Check Pods Manifest.lock */,
 				6BFE54171FD69D8A001F127F /* Sources */,
 				6BFE54181FD69D8A001F127F /* Frameworks */,
 				6BFE54191FD69D8A001F127F /* Resources */,
 				6BFE549F1FD6A6F3001F127F /* Embed App Extensions */,
+				6BFE54CB1FD6AFC0001F127F /* Embed Frameworks */,
+				CB7CA8F0DF92B73FFCD90071 /* [CP] Embed Pods Frameworks */,
+				92C3069DB32436B1D35DC955 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6BFE549A1FD6A6F3001F127F /* PBXTargetDependency */,
+				6BFE54B01FD6A78D001F127F /* PBXTargetDependency */,
+				6BFE54C51FD6AFC0001F127F /* PBXTargetDependency */,
 			);
 			name = KayzrStaff;
 			productName = KayzrStaff;
@@ -267,22 +364,40 @@
 			productReference = 6BFE543A1FD69D8B001F127F /* KayzrStaffUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		6BFE54901FD6A6F3001F127F /* KayzrStaffShared */ = {
+		6BFE54A31FD6A78D001F127F /* KayzrStaffToday */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BFE549C1FD6A6F3001F127F /* Build configuration list for PBXNativeTarget "KayzrStaffShared" */;
+			buildConfigurationList = 6BFE54B21FD6A78D001F127F /* Build configuration list for PBXNativeTarget "KayzrStaffToday" */;
 			buildPhases = (
-				6BFE548D1FD6A6F3001F127F /* Sources */,
-				6BFE548E1FD6A6F3001F127F /* Frameworks */,
-				6BFE548F1FD6A6F3001F127F /* Resources */,
+				6BFE54A01FD6A78D001F127F /* Sources */,
+				6BFE54A11FD6A78D001F127F /* Frameworks */,
+				6BFE54A21FD6A78D001F127F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KayzrStaffShared;
-			productName = KayzrStaffShared;
-			productReference = 6BFE54911FD6A6F3001F127F /* KayzrStaffShared.appex */;
+			name = KayzrStaffToday;
+			productName = KayzrStaffToday;
+			productReference = 6BFE54A41FD6A78D001F127F /* KayzrStaffToday.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		6BFE54BE1FD6AFC0001F127F /* KayzrStaff_Shared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BFE54C81FD6AFC0001F127F /* Build configuration list for PBXNativeTarget "KayzrStaff_Shared" */;
+			buildPhases = (
+				6BFE54BA1FD6AFC0001F127F /* Sources */,
+				6BFE54BB1FD6AFC0001F127F /* Frameworks */,
+				6BFE54BC1FD6AFC0001F127F /* Headers */,
+				6BFE54BD1FD6AFC0001F127F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KayzrStaff_Shared;
+			productName = KayzrStaff_Shared;
+			productReference = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -308,7 +423,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6BFE541A1FD69D8A001F127F;
 					};
-					6BFE54901FD6A6F3001F127F = {
+					6BFE54A31FD6A78D001F127F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6BFE54BE1FD6AFC0001F127F = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -330,7 +454,8 @@
 				6BFE541A1FD69D8A001F127F /* KayzrStaff */,
 				6BFE542E1FD69D8A001F127F /* KayzrStaffTests */,
 				6BFE54391FD69D8B001F127F /* KayzrStaffUITests */,
-				6BFE54901FD6A6F3001F127F /* KayzrStaffShared */,
+				6BFE54A31FD6A78D001F127F /* KayzrStaffToday */,
+				6BFE54BE1FD6AFC0001F127F /* KayzrStaff_Shared */,
 			);
 		};
 /* End PBXProject section */
@@ -360,31 +485,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BFE548F1FD6A6F3001F127F /* Resources */ = {
+		6BFE54A21FD6A78D001F127F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BFE54971FD6A6F3001F127F /* MainInterface.storyboard in Resources */,
+				6BFE54AD1FD6A78D001F127F /* MainInterface.storyboard in Resources */,
+				6BF6564E1FD6C27700A943B8 /* games.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFE54BD1FD6AFC0001F127F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FEED61BA9EF109FC1D64750 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KayzrStaff-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92C3069DB32436B1D35DC955 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7CA8F0DF92B73FFCD90071 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6BFE54171FD69D8A001F127F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BFE54761FD6A0B3001F127F /* Availability.swift in Sources */,
 				6BFE547A1FD6A111001F127F /* LoginUserViewController.swift in Sources */,
 				6BFE54881FD6A270001F127F /* AvailabilityCell.swift in Sources */,
 				6BFE547E1FD6A133001F127F /* ThisWeekViewController.swift in Sources */,
-				6BFE54741FD6A09C001F127F /* Tournament.swift in Sources */,
 				6BFE54861FD6A262001F127F /* TournamentCell.swift in Sources */,
 				6BFE548A1FD6A27D001F127F /* HeaderCell.swift in Sources */,
 				6BFE54841FD6A164001F127F /* TeamInfoViewController.swift in Sources */,
-				6BFE54721FD6A091001F127F /* User.swift in Sources */,
-				6BFE54781FD6A0C0001F127F /* EndWeek.swift in Sources */,
 				6BFE547C1FD6A122001F127F /* HomeViewController.swift in Sources */,
 				6BFE54801FD6A142001F127F /* ThisWeekDayViewController.swift in Sources */,
 				6BFE54821FD6A157001F127F /* AvailabilityViewController.swift in Sources */,
@@ -407,11 +592,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BFE548D1FD6A6F3001F127F /* Sources */ = {
+		6BFE54A01FD6A78D001F127F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BFE54941FD6A6F3001F127F /* ShareViewController.swift in Sources */,
+				6BFE54B91FD6AE35001F127F /* TournamentTodayCell.swift in Sources */,
+				6BFE54AA1FD6A78D001F127F /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFE54BA1FD6AFC0001F127F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFE54D01FD6AFEE001F127F /* Availability.swift in Sources */,
+				6BFE54CF1FD6AFEE001F127F /* Tournament.swift in Sources */,
+				6BFE54CC1FD6AFDE001F127F /* User.swift in Sources */,
+				6BFE54D11FD6AFEE001F127F /* EndWeek.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +625,15 @@
 			target = 6BFE541A1FD69D8A001F127F /* KayzrStaff */;
 			targetProxy = 6BFE543B1FD69D8B001F127F /* PBXContainerItemProxy */;
 		};
-		6BFE549A1FD6A6F3001F127F /* PBXTargetDependency */ = {
+		6BFE54B01FD6A78D001F127F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6BFE54901FD6A6F3001F127F /* KayzrStaffShared */;
-			targetProxy = 6BFE54991FD6A6F3001F127F /* PBXContainerItemProxy */;
+			target = 6BFE54A31FD6A78D001F127F /* KayzrStaffToday */;
+			targetProxy = 6BFE54AF1FD6A78D001F127F /* PBXContainerItemProxy */;
+		};
+		6BFE54C51FD6AFC0001F127F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BFE54BE1FD6AFC0001F127F /* KayzrStaff_Shared */;
+			targetProxy = 6BFE54C41FD6AFC0001F127F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -452,10 +654,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		6BFE54951FD6A6F3001F127F /* MainInterface.storyboard */ = {
+		6BFE54AB1FD6A78D001F127F /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6BFE54961FD6A6F3001F127F /* Base */,
+				6BFE54AC1FD6A78D001F127F /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -572,6 +774,7 @@
 		};
 		6BFE54441FD69D8B001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA6BB464B8A38158CC30756C /* Pods-KayzrStaff.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -588,6 +791,7 @@
 		};
 		6BFE54451FD69D8B001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E4A988FEC51A1958CC418A /* Pods-KayzrStaff.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -668,14 +872,15 @@
 			};
 			name = Release;
 		};
-		6BFE549D1FD6A6F3001F127F /* Debug */ = {
+		6BFE54B31FD6A78D001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KayzrStaffToday/KayzrStaffToday.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VJFXM46G9;
-				INFOPLIST_FILE = KayzrStaffShared/Info.plist;
+				INFOPLIST_FILE = KayzrStaffToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Mafken.KayzrStaff.KayzrStaffShared;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafken.KayzrStaff.KayzrStaffToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -683,18 +888,69 @@
 			};
 			name = Debug;
 		};
-		6BFE549E1FD6A6F3001F127F /* Release */ = {
+		6BFE54B41FD6A78D001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KayzrStaffToday/KayzrStaffToday.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VJFXM46G9;
-				INFOPLIST_FILE = KayzrStaffShared/Info.plist;
+				INFOPLIST_FILE = KayzrStaffToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Mafken.KayzrStaff.KayzrStaffShared;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafken.KayzrStaff.KayzrStaffToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BFE54C91FD6AFC0001F127F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3VJFXM46G9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KayzrStaff_Shared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mafken.KayzrStaff-Shared";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BFE54CA1FD6AFC0001F127F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3VJFXM46G9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KayzrStaff_Shared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mafken.KayzrStaff-Shared";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -737,11 +993,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BFE549C1FD6A6F3001F127F /* Build configuration list for PBXNativeTarget "KayzrStaffShared" */ = {
+		6BFE54B21FD6A78D001F127F /* Build configuration list for PBXNativeTarget "KayzrStaffToday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6BFE549D1FD6A6F3001F127F /* Debug */,
-				6BFE549E1FD6A6F3001F127F /* Release */,
+				6BFE54B31FD6A78D001F127F /* Debug */,
+				6BFE54B41FD6A78D001F127F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BFE54C81FD6AFC0001F127F /* Build configuration list for PBXNativeTarget "KayzrStaff_Shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BFE54C91FD6AFC0001F127F /* Debug */,
+				6BFE54CA1FD6AFC0001F127F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
