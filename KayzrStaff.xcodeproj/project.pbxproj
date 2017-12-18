@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57813FB62787D939F7C2165A /* Pods_KayzrStaffToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40C3DE379F4CF29E97DFF32 /* Pods_KayzrStaffToday.framework */; };
+		6B75677F1FDABC94006FD504 /* KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; };
+		6B7567831FDAE186006FD504 /* KayzrStaffAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7567821FDAE186006FD504 /* KayzrStaffAPI.swift */; };
 		6BF6564E1FD6C27700A943B8 /* games.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF6564D1FD6C27700A943B8 /* games.xcassets */; };
 		6BFE541F1FD69D8A001F127F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE541E1FD69D8A001F127F /* AppDelegate.swift */; };
 		6BFE54241FD69D8A001F127F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE54221FD69D8A001F127F /* Main.storyboard */; };
@@ -28,14 +31,14 @@
 		6BFE54B11FD6A78D001F127F /* KayzrStaffToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6BFE54A41FD6A78D001F127F /* KayzrStaffToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6BFE54B91FD6AE35001F127F /* TournamentTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54B81FD6AE35001F127F /* TournamentTodayCell.swift */; };
 		6BFE54C31FD6AFC0001F127F /* KayzrStaff_Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFE54C11FD6AFC0001F127F /* KayzrStaff_Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BFE54C61FD6AFC0001F127F /* KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; };
 		6BFE54C71FD6AFC0001F127F /* KayzrStaff_Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6BFE54CC1FD6AFDE001F127F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54711FD6A091001F127F /* User.swift */; };
 		6BFE54CF1FD6AFEE001F127F /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54731FD6A09C001F127F /* Tournament.swift */; };
 		6BFE54D01FD6AFEE001F127F /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54751FD6A0B3001F127F /* Availability.swift */; };
 		6BFE54D11FD6AFEE001F127F /* EndWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54771FD6A0C0001F127F /* EndWeek.swift */; };
 		6BFE54D21FD6B06B001F127F /* KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; };
-		754F9B629508CC564511EADE /* Pods_KayzrStaff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBC65F80E9EEF5DDAF4F28E /* Pods_KayzrStaff.framework */; };
+		C5DD00057D6893E961FC2252 /* Pods_KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15CB62DF0C0CD21A1FDB132 /* Pods_KayzrStaff_Shared.framework */; };
+		F5789AED82043E85E975FFE2 /* Pods_KayzrStaff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A43ADA71A0F0698F37500AF /* Pods_KayzrStaff.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +98,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1BBC65F80E9EEF5DDAF4F28E /* Pods_KayzrStaff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D84CCABB4CCC68B2B49298C /* Pods-KayzrStaff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.debug.xcconfig"; sourceTree = "<group>"; };
+		1A43ADA71A0F0698F37500AF /* Pods_KayzrStaff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DFE5C1FD82082003CFEA3 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DFE5D1FD82082003CFEA3 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DFE5F1FD82176003CFEA3 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DFE611FD8217A003CFEA3 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DFE631FD82204003CFEA3 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DFE651FD82223003CFEA3 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0DFE671FD8222D003CFEA3 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B386C201FD834850044DCB9 /* KayzrStaff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KayzrStaff.entitlements; sourceTree = "<group>"; };
+		6B7567821FDAE186006FD504 /* KayzrStaffAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayzrStaffAPI.swift; sourceTree = "<group>"; };
 		6BF6564D1FD6C27700A943B8 /* games.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = games.xcassets; sourceTree = "<group>"; };
 		6BFE541B1FD69D8A001F127F /* KayzrStaff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KayzrStaff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFE541E1FD69D8A001F127F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,8 +142,13 @@
 		6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KayzrStaff_Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFE54C11FD6AFC0001F127F /* KayzrStaff_Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KayzrStaff_Shared.h; sourceTree = "<group>"; };
 		6BFE54C21FD6AFC0001F127F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2E4A988FEC51A1958CC418A /* Pods-KayzrStaff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.release.xcconfig"; sourceTree = "<group>"; };
-		FA6BB464B8A38158CC30756C /* Pods-KayzrStaff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.debug.xcconfig"; sourceTree = "<group>"; };
+		72AC5EA54E164E439F17D533 /* Pods-KayzrStaff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.release.xcconfig"; sourceTree = "<group>"; };
+		77E919739C6179452601CCD2 /* Pods-KayzrStaffToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaffToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday.release.xcconfig"; sourceTree = "<group>"; };
+		A09B0D184042ECB516C4F149 /* Pods-KayzrStaffToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaffToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday.debug.xcconfig"; sourceTree = "<group>"; };
+		B15CB62DF0C0CD21A1FDB132 /* Pods_KayzrStaff_Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff_Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40C3DE379F4CF29E97DFF32 /* Pods_KayzrStaffToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaffToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5DDDDDFE086DEA0DC15119 /* Pods-KayzrStaff_Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff_Shared.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared.debug.xcconfig"; sourceTree = "<group>"; };
+		F8F30F2BCA96B2B5C2E65A0A /* Pods-KayzrStaff_Shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff_Shared.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +156,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BFE54C61FD6AFC0001F127F /* KayzrStaff_Shared.framework in Frameworks */,
-				754F9B629508CC564511EADE /* Pods_KayzrStaff.framework in Frameworks */,
+				F5789AED82043E85E975FFE2 /* Pods_KayzrStaff.framework in Frameworks */,
+				6B75677F1FDABC94006FD504 /* KayzrStaff_Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +181,7 @@
 			files = (
 				6BFE54D21FD6B06B001F127F /* KayzrStaff_Shared.framework in Frameworks */,
 				6BFE54A71FD6A78D001F127F /* NotificationCenter.framework in Frameworks */,
+				57813FB62787D939F7C2165A /* Pods_KayzrStaffToday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,19 +189,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DD00057D6893E961FC2252 /* Pods_KayzrStaff_Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46A0BA409113DA93EC607DC4 /* Pods */ = {
+		6074E426CBE086FA2504107D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA6BB464B8A38158CC30756C /* Pods-KayzrStaff.debug.xcconfig */,
-				F2E4A988FEC51A1958CC418A /* Pods-KayzrStaff.release.xcconfig */,
+				0D84CCABB4CCC68B2B49298C /* Pods-KayzrStaff.debug.xcconfig */,
+				72AC5EA54E164E439F17D533 /* Pods-KayzrStaff.release.xcconfig */,
+				A09B0D184042ECB516C4F149 /* Pods-KayzrStaffToday.debug.xcconfig */,
+				77E919739C6179452601CCD2 /* Pods-KayzrStaffToday.release.xcconfig */,
+				DF5DDDDDFE086DEA0DC15119 /* Pods-KayzrStaff_Shared.debug.xcconfig */,
+				F8F30F2BCA96B2B5C2E65A0A /* Pods-KayzrStaff_Shared.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B0A469E1FD748E50025F343 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B7567821FDAE186006FD504 /* KayzrStaffAPI.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		6BFE54121FD69D8A001F127F = {
@@ -193,7 +225,7 @@
 				6BFE54C01FD6AFC0001F127F /* KayzrStaff_Shared */,
 				6BFE54A51FD6A78D001F127F /* Frameworks */,
 				6BFE541C1FD69D8A001F127F /* Products */,
-				46A0BA409113DA93EC607DC4 /* Pods */,
+				6074E426CBE086FA2504107D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +244,7 @@
 		6BFE541D1FD69D8A001F127F /* KayzrStaff */ = {
 			isa = PBXGroup;
 			children = (
+				6B386C201FD834850044DCB9 /* KayzrStaff.entitlements */,
 				6BFE546F1FD6A069001F127F /* ViewControllers */,
 				6BFE546E1FD6A03B001F127F /* Views */,
 				6BFE541E1FD69D8A001F127F /* AppDelegate.swift */,
@@ -260,8 +293,17 @@
 		6BFE54A51FD6A78D001F127F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B0DFE671FD8222D003CFEA3 /* Realm.framework */,
+				6B0DFE651FD82223003CFEA3 /* RealmSwift.framework */,
+				6B0DFE631FD82204003CFEA3 /* Realm.framework */,
+				6B0DFE611FD8217A003CFEA3 /* RealmSwift.framework */,
+				6B0DFE5F1FD82176003CFEA3 /* Realm.framework */,
+				6B0DFE5C1FD82082003CFEA3 /* Realm.framework */,
+				6B0DFE5D1FD82082003CFEA3 /* RealmSwift.framework */,
 				6BFE54A61FD6A78D001F127F /* NotificationCenter.framework */,
-				1BBC65F80E9EEF5DDAF4F28E /* Pods_KayzrStaff.framework */,
+				1A43ADA71A0F0698F37500AF /* Pods_KayzrStaff.framework */,
+				C40C3DE379F4CF29E97DFF32 /* Pods_KayzrStaffToday.framework */,
+				B15CB62DF0C0CD21A1FDB132 /* Pods_KayzrStaff_Shared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,6 +324,7 @@
 		6BFE54C01FD6AFC0001F127F /* KayzrStaff_Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6B0A469E1FD748E50025F343 /* Services */,
 				6BFE54701FD6A07B001F127F /* Models */,
 				6BFE54C11FD6AFC0001F127F /* KayzrStaff_Shared.h */,
 				6BFE54251FD69D8A001F127F /* Assets.xcassets */,
@@ -308,14 +351,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BFE54431FD69D8B001F127F /* Build configuration list for PBXNativeTarget "KayzrStaff" */;
 			buildPhases = (
-				2FEED61BA9EF109FC1D64750 /* [CP] Check Pods Manifest.lock */,
+				1A0FCC16F4A51F4AF7D2E7D4 /* [CP] Check Pods Manifest.lock */,
 				6BFE54171FD69D8A001F127F /* Sources */,
 				6BFE54181FD69D8A001F127F /* Frameworks */,
 				6BFE54191FD69D8A001F127F /* Resources */,
 				6BFE549F1FD6A6F3001F127F /* Embed App Extensions */,
 				6BFE54CB1FD6AFC0001F127F /* Embed Frameworks */,
-				CB7CA8F0DF92B73FFCD90071 /* [CP] Embed Pods Frameworks */,
-				92C3069DB32436B1D35DC955 /* [CP] Copy Pods Resources */,
+				D9A91134A21DA22333E2CA29 /* [CP] Embed Pods Frameworks */,
+				0A16BB01D53CB5DCD2E111D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,9 +411,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BFE54B21FD6A78D001F127F /* Build configuration list for PBXNativeTarget "KayzrStaffToday" */;
 			buildPhases = (
+				024B89D1D8E4E945DFDD6B3B /* [CP] Check Pods Manifest.lock */,
 				6BFE54A01FD6A78D001F127F /* Sources */,
 				6BFE54A11FD6A78D001F127F /* Frameworks */,
 				6BFE54A21FD6A78D001F127F /* Resources */,
+				8AB2947483AE5851E8FC8644 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -385,10 +430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BFE54C81FD6AFC0001F127F /* Build configuration list for PBXNativeTarget "KayzrStaff_Shared" */;
 			buildPhases = (
+				7E6141270E6AE8B9F471B85D /* [CP] Check Pods Manifest.lock */,
 				6BFE54BA1FD6AFC0001F127F /* Sources */,
 				6BFE54BB1FD6AFC0001F127F /* Frameworks */,
 				6BFE54BC1FD6AFC0001F127F /* Headers */,
 				6BFE54BD1FD6AFC0001F127F /* Resources */,
+				AC4A0D9BD53B97D42831D236 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -412,6 +459,11 @@
 					6BFE541A1FD69D8A001F127F = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6BFE542E1FD69D8A001F127F = {
 						CreatedOnToolsVersion = 9.1;
@@ -504,7 +556,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2FEED61BA9EF109FC1D64750 /* [CP] Check Pods Manifest.lock */ = {
+		024B89D1D8E4E945DFDD6B3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KayzrStaffToday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A16BB01D53CB5DCD2E111D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A0FCC16F4A51F4AF7D2E7D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,7 +607,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92C3069DB32436B1D35DC955 /* [CP] Copy Pods Resources */ = {
+		7E6141270E6AE8B9F471B85D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KayzrStaff_Shared-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB2947483AE5851E8FC8644 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -534,10 +637,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB7CA8F0DF92B73FFCD90071 /* [CP] Embed Pods Frameworks */ = {
+		AC4A0D9BD53B97D42831D236 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9A91134A21DA22333E2CA29 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,11 +664,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -608,6 +730,7 @@
 				6BFE54D01FD6AFEE001F127F /* Availability.swift in Sources */,
 				6BFE54CF1FD6AFEE001F127F /* Tournament.swift in Sources */,
 				6BFE54CC1FD6AFDE001F127F /* User.swift in Sources */,
+				6B7567831FDAE186006FD504 /* KayzrStaffAPI.swift in Sources */,
 				6BFE54D11FD6AFEE001F127F /* EndWeek.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,6 +791,7 @@
 		6BFE54411FD69D8B001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -718,13 +842,16 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 			};
 			name = Debug;
 		};
 		6BFE54421FD69D8B001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -767,17 +894,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		6BFE54441FD69D8B001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA6BB464B8A38158CC30756C /* Pods-KayzrStaff.debug.xcconfig */;
+			baseConfigurationReference = 0D84CCABB4CCC68B2B49298C /* Pods-KayzrStaff.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KayzrStaff/KayzrStaff.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VJFXM46G9;
 				INFOPLIST_FILE = KayzrStaff/Info.plist;
@@ -791,10 +921,11 @@
 		};
 		6BFE54451FD69D8B001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2E4A988FEC51A1958CC418A /* Pods-KayzrStaff.release.xcconfig */;
+			baseConfigurationReference = 72AC5EA54E164E439F17D533 /* Pods-KayzrStaff.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KayzrStaff/KayzrStaff.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VJFXM46G9;
 				INFOPLIST_FILE = KayzrStaff/Info.plist;
@@ -874,6 +1005,7 @@
 		};
 		6BFE54B31FD6A78D001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09B0D184042ECB516C4F149 /* Pods-KayzrStaffToday.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KayzrStaffToday/KayzrStaffToday.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -890,6 +1022,7 @@
 		};
 		6BFE54B41FD6A78D001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E919739C6179452601CCD2 /* Pods-KayzrStaffToday.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KayzrStaffToday/KayzrStaffToday.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -906,7 +1039,9 @@
 		};
 		6BFE54C91FD6AFC0001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5DDDDDFE086DEA0DC15119 /* Pods-KayzrStaff_Shared.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -931,7 +1066,9 @@
 		};
 		6BFE54CA1FD6AFC0001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F30F2BCA96B2B5C2E65A0A /* Pods-KayzrStaff_Shared.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

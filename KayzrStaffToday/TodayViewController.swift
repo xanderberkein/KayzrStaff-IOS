@@ -13,12 +13,72 @@ import KayzrStaff_Shared
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var todayTournamentsTable: UITableView!
     
-    var tournaments: [Tournament] = [Tournament(id: 1, name: "Counter-strike:Global Offensive 5V5", nameShort: "CSGO 5V5",
-                                               day:"Donderdag", date: "10/2/2017", hour: "17h20", moderator: "yannickverc"),
-                                     Tournament(id: 2, name: "CV League of Legends 5V5", nameShort: "LoL 5V5", day: "Woensdag", date: "10/2/2017", hour: "17h20", moderator: "Mafken")]
+    var tournaments: [Tournament] = []
+    var tournamentsToday :  [Tournament] = []
+    private var tournamentTask: URLSessionTask?
+    private let userDefaults = UserDefaults(suiteName: "group.KayzrStaffToday")!
     
-    
-    
+    override func viewDidLoad() {
+        var username : String?
+      
+        username = userDefaults.string(forKey: "username")
+        
+        if username != nil  {
+            tournamentTask?.cancel()
+            tournamentTask = KayzrStaffAPI.getTournamentsThisWeek() {
+                self.tournaments = $0!
+                
+                self.tournaments = self.tournaments.filter(){
+                    $0.moderator == username
+                }
+                
+                for t in self.tournaments {
+                    switch t.day {
+                    case "Maandag" :
+                        if Date().dayNumberOfWeek() == 2 {
+                            self.tournamentsToday.append(t)
+                        }
+                    case "Dinsdag" :
+                        if Date().dayNumberOfWeek() == 3 {
+                            self.tournamentsToday.append(t)
+                        }
+                    case "Woensdag" :
+                        if Date().dayNumberOfWeek() == 4 {
+                            self.tournamentsToday.append(t)
+                        }
+                    case "Donderdag" :
+                        if Date().dayNumberOfWeek() == 5 {
+                            self.tournamentsToday.append(t)
+                        }
+                    case "Vrijdag" :
+                        if Date().dayNumberOfWeek() == 6 {
+                            self.tournamentsToday.append(t)
+                        }
+                    case "Zaterdag" :
+                        if Date().dayNumberOfWeek() == 7 {
+                            self.tournamentsToday.append(t)
+                        }
+                    case "Zondag" :
+                        if Date().dayNumberOfWeek() == 1 {
+                            self.tournamentsToday.append(t)
+                        }
+                    default :
+                        break
+                    }
+                    
+                }
+                if self.tournamentsToday.count == 0 {
+                    self.tournamentsToday.append(Tournament(id: -1, name: "No Tournament Today!", nameShort: "NTT", day: "", date: "", hour: "", moderator: ""))
+                }
+                
+                self.todayTournamentsTable.reloadData()
+            }
+            tournamentTask!.resume()
+        } else {
+            tournaments.append(Tournament(id: -1, name: "Log in the application first", nameShort: "", day: "", date: "", hour: "", moderator: ""))
+        }
+        
+    }
     
 }
 extension TodayViewController: UITableViewDataSource {
@@ -28,13 +88,18 @@ extension TodayViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tournaments.count
+        return tournamentsToday.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tournamentTodayCell", for: indexPath) as! TournamentTodayCell
-        cell.tournament = tournaments[indexPath.row]
+        cell.tournament = tournamentsToday[indexPath.row]
         return cell
     }
 }
 
+extension Date {
+    func dayNumberOfWeek() -> Int? {
+        return Calendar.current.dateComponents([.weekday], from: self).weekday
+    }
+}

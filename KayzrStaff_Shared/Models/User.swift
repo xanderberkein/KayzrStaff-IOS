@@ -1,22 +1,31 @@
+import RealmSwift
+public class User: Object {
+     @objc dynamic public var userId: Int = -1
+     @objc dynamic public var username: String = ""
+     @objc dynamic public var fullname: String = ""
+     @objc dynamic public var password: String = ""
+     @objc dynamic public var phonenumber: String = ""
 
-public class User {
-    public var userId: Int
-    public var username: String
-    public var fullname: String
-    public var password: String
-    public var phonenumber: String
-    public var role: Role
     
-    public enum Role {
+    public enum Role : String{
         
-        case CM
-        case Mod
-        case Admin
+        case CM = "CM"
+        case Mod = "Mod"
+        case Admin = "Admin"
         
-        static let roles = [Role.CM, .Mod, .Admin]
+        static let roles: [Role] = [Role.CM, .Mod, .Admin]
+    }
+    @objc dynamic var roleRaw = ""
+    public var role : Role {
+        get {
+            return Role(rawValue: roleRaw) ?? .Mod
+        } set {
+            roleRaw = newValue.rawValue
+        }
     }
     
-    public init(userId: Int, username: String, fullname: String, password: String, phonenumber: String, role: Role) {
+     public convenience init(userId: Int, username: String, fullname: String, password: String, phonenumber: String, role: Role) {
+        self.init()
         self.userId = userId
         self.username = username
         self.fullname = fullname

@@ -12,15 +12,24 @@ class TournamentCell: UITableViewCell {
     
     var tournament: Tournament! {
         didSet{
-            nameLabel.text = tournament.name
             dateLabel.text = tournament.day + " " + tournament.date
-            startTimeLabel.text = "Begint om: " + tournament.hour
             
-            if tournament.moderator != "" {
-                moderatorLabel?.text = tournament.moderator
+            if tournament.hour == "" {
+                 startTimeLabel.text = "" 
+            } else {
+                startTimeLabel.text = "Begint om: " + tournament.hour
             }
             
-            if tournament.nameShort.contains("CSGO"){
+            if tournament.moderator != "" {
+                if tournament.moderator.contains(";") {
+                    tournament.moderator = tournament.moderator.replacingOccurrences(of: ";", with: " & ")
+                }
+                moderatorLabel?.text = tournament.moderator
+            } else {
+                moderatorLabel?.text = "No moderator assigned"
+            }
+            
+            if tournament.nameShort.contains("CS:GO"){
                 gameImage.image = #imageLiteral(resourceName: "CSGO")
             } else if tournament.nameShort.contains("LoL"){
                 gameImage.image = #imageLiteral(resourceName: "LOL")
@@ -30,10 +39,22 @@ class TournamentCell: UITableViewCell {
                 gameImage.image = #imageLiteral(resourceName: "HS")
             } else if tournament.nameShort.contains("FIFA") {
                 gameImage.image = #imageLiteral(resourceName: "Fifa")
-            }else {
+            } else if tournament.nameShort.contains("R6") {
+                gameImage.image = #imageLiteral(resourceName: "R6")
+            } else if tournament.nameShort.contains("SC II") {
+                gameImage.image = #imageLiteral(resourceName: "SCII")
+            } else if tournament.nameShort.contains("COD") {
+                gameImage.image = #imageLiteral(resourceName: "COD")
+            } else {
                 gameImage.image = #imageLiteral(resourceName: "icon")
             }
             
+            if tournament.name.starts(with: "PS:") {
+                tournament.name = String(tournament.name.dropFirst(4))
+            } else if tournament.name.starts(with: "Fun:") {
+                tournament.name = String(tournament.name.dropFirst(5))
+            }
+            nameLabel.text = tournament.name
         }
     }
     

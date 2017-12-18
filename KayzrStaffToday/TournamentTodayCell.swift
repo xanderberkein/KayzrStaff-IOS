@@ -18,10 +18,21 @@ class TournamentTodayCell : UITableViewCell {
     
     var tournament: Tournament! {
         didSet{
-            nameLabel.text = tournament.name
-            starthourLabel.text = "Starts at:" + tournament.hour
             
-            if tournament.nameShort.contains("CSGO"){
+            if tournament.name.starts(with: "PS:") {
+                tournament.name = String(tournament.name.dropFirst(4))
+            } else if tournament.name.starts(with: "Fun:") {
+                tournament.name = String(tournament.name.dropFirst(5))
+            }
+            
+            nameLabel.text = tournament.name
+            if tournament.hour == "" {
+                starthourLabel.text = ""
+            } else {
+                starthourLabel.text = "Starts at:" + tournament.hour
+            }
+            
+            if tournament.nameShort.contains("CS:GO"){
                 gameImage.image = #imageLiteral(resourceName: "csgoToday")
             } else if tournament.nameShort.contains("LoL"){
                 gameImage.image = #imageLiteral(resourceName: "LOLToday")
@@ -31,9 +42,17 @@ class TournamentTodayCell : UITableViewCell {
                 gameImage.image = #imageLiteral(resourceName: "HSToday")
             } else if tournament.nameShort.contains("FIFA") {
                 gameImage.image = #imageLiteral(resourceName: "FifaToday")
-            }else {
-                //gameImage.image = #imageLiteral(resourceName: "icon")
+            }else if tournament.nameShort.contains("R6") {
+                gameImage.image = #imageLiteral(resourceName: "R6Today")
+            } else if tournament.nameShort.contains("SC II") {
+                gameImage.image = #imageLiteral(resourceName: "SCIIToday")
+            } else if tournament.nameShort.contains("COD") {
+                gameImage.image = #imageLiteral(resourceName: "CODToday")
+            } else {
+                gameImage.image = #imageLiteral(resourceName: "iconToday")
             }
+            
+            
         }
     }
 }

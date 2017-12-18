@@ -12,19 +12,17 @@ import KayzrStaff_Shared
 class TeamInfoViewController : UITableViewController {
     @IBOutlet weak var teamTable : UITableView!
     
-    var team : [User] = [User(userId: 10, username: "Mafken", fullname: "Jens Leirens", password: "123", phonenumber: "0471626404",
-                              role: User.Role.Mod),
-                         User(userId: 11, username: "Maus", fullname: "Mauseken van iets", password: "123", phonenumber: "0471626404",
-                              role: User.Role.Mod),
-                         User(userId: 10, username: "Dierke9", fullname: "dieter dierkes", password: "123", phonenumber: "0471626404",
-                              role: User.Role.Mod),
-                         User(userId: 10, username: "XBio", fullname: "Marnik Van nenlanden", password: "123", phonenumber: "0471626404",
-                              role: User.Role.Mod),
-                         User(userId: 10, username: "yannickverc", fullname: "Yannick Vercauteren", password: "123", phonenumber: "0471626404", role: User.Role.CM),
-                         User(userId: 10, username: "Vancha_March", fullname: "Evert Pauwels", password: "123", phonenumber: "0471626404", role: User.Role.CM),
-                         User(userId: 10, username: "RenoNiiChan", fullname: "Reno Schoutteet", password: "123", phonenumber: "0471626404", role: User.Role.CM),
-                         User(userId: 10, username: "Zibri7", fullname: "Ewoud Van de Rostyne", password: "123", phonenumber: "0471626404", role: User.Role.CM)]
+    private var userTask: URLSessionTask?
+    var team : [User] = []
     
+    override func viewDidLoad() {
+        userTask?.cancel()
+        userTask = KayzrStaffAPI.getAllUsers() {
+            self.team = $0!
+            self.teamTable.reloadData()
+        }
+        userTask!.resume()
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

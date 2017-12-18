@@ -1,37 +1,92 @@
 import UIKit
+import RealmSwift
 import KayzrStaff_Shared
+import CryptoSwift
+
 class LoginUserViewController : UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
-    var user : User = User(userId: 0, username: "", fullname: "", password: "", phonenumber: "", role: .Mod)
+    private var userTask: URLSessionTask?
+    private let userDefaults = UserDefaults(suiteName: "group.KayzrStaffToday")!
+    
+    var team : [User]!
+    var savedUser : Results<User>?
+    var user : User?
+    var decryptedPassword = ""
+    
+    override func viewDidLoad() {
+        savedUser = try! Realm().objects(User.self)
+        usernameField.text = savedUser?.first?.username
+        passwordField.text = savedUser?.first?.password
+        if  savedUser?.first != nil {
+            getTheUser(username: savedUser!.first!.username)
+        }
+        usernameField.becomeFirstResponder()
+        loginButton.layer.cornerRadius = 5
+    }
     
     @IBAction func logUserIn() {
-        if (usernameField.text == "admin"  && passwordField.text == "admin") ||
-            (usernameField.text == "root"  && passwordField.text == "") {
-            user = User(userId: 1, username: usernameField.text!, fullname: "admin mafken", password: passwordField.text! , phonenumber: "0471333333", role: .Admin)
+        
+        if user == nil  {
+            let alert = UIAlertController(title: "User Not found", message: "We did not find user: \(usernameField.text ?? "")", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        } else {
+            if passwordField.text! == user!.password {
+                //pasword was already encrypted
+                performSegue(withIdentifier: "MainAppSegue", sender: self)
+            } else {
+                // using of the code of https://github.com/krzyzanowskim/CryptoSwift to encrypt the password which is added in the podfile
+                decryptedPassword = passwordField.text!.sha256()
+                
+                if decryptedPassword == user!.password {
+                    //user is valid
+                    // the user can now continue because the user var is now the logged in user
+                    performSegue(withIdentifier: "MainAppSegue", sender: self)
+                } else {
+                    let alert = UIAlertController(title: "Password not correct", message: "The password for user \(user!.username) was not correct. Please try again", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
         }
     }
     
     @IBAction func moveFocusToPassword() {
+        getTheUser(username: usernameField.text!)
         usernameField.resignFirstResponder()
         passwordField.becomeFirstResponder()
     }
     
-    override func viewDidLoad() {
-        usernameField.becomeFirstResponder()
-        loginButton.layer.cornerRadius = 5
+    
+    
+    private func getTheUser(username: String) {
+        userTask?.cancel()
+        userTask = KayzrStaffAPI.getUser(for: username ) {
+            self.user = $0
+            
+        }
+        userTask!.resume()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "MainAppSegue" else {
             fatalError("Unknown Segue")
         }
+        let destination = ((segue.destination as! UITabBarController).viewControllers![0] as! UINavigationController).topViewController as! HomeViewController
+        destination.user = user!
         
-        //let destination = segue.destination as! HomeViewController
-        //destination.user = user
+        let realm = try! Realm()
+        try! realm.write {
+            // this is temp because the plan is to store more then just the logged in user
+            realm.deleteAll()
+            realm.add(user!)
+        }
+       
+        userDefaults.set(user!.username, forKey: "username")
     }
     
     
