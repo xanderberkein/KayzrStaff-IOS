@@ -21,6 +21,11 @@ class HomeViewController: UIViewController {
                self.tournamentsToModerate.append(Tournament(id: -1, name: "No tournaments assigned!", nameShort: "NTA", day: "", date: "", hour: "", moderator: "-"))
             }
             
+            // sorteer de lijst van toernooien zodat de toernooi die eerst komen eerst worden weergegeven
+            self.tournamentsToModerate.sort{
+                $0.date.dropLast(8) < $1.date.dropLast(8)
+            }
+            
             self.tableView.reloadData()
         }
         tournamentTask!.resume()
