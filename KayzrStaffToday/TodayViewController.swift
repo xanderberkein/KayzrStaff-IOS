@@ -70,7 +70,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 if self.tournamentsToday.count == 0 {
                     self.tournamentsToday.append(Tournament(id: -1, name: "No Tournament Today!", nameShort: "NTT", day: "", date: "", hour: "", moderator: ""))
                 }
-                
                 self.todayTournamentsTable.reloadData()
             }
             tournamentTask!.resume()

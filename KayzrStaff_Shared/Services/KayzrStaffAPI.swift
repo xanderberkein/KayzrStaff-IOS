@@ -34,6 +34,7 @@ public enum KayzrStaffAPI {
                     completion(nil)
                     return
             }
+            
             var users: [User] = []
             for i in 0 ... json.count - 1  {
                 let tempUser = json[i]
@@ -71,6 +72,7 @@ public enum KayzrStaffAPI {
                     completion(nil)
                     return
             }
+            
             var user = User()
             for i in 0 ... json.count - 1  {
                 let tempUser = json[i]

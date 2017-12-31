@@ -45,6 +45,8 @@ class TournamentCell: UITableViewCell {
                 gameImage.image = #imageLiteral(resourceName: "SCII")
             } else if tournament.nameShort.contains("COD") {
                 gameImage.image = #imageLiteral(resourceName: "COD")
+            } else if tournament.nameShort.contains("BR") {
+                gameImage.image = #imageLiteral(resourceName: "battlerite")
             } else {
                 gameImage.image = #imageLiteral(resourceName: "icon")
             }

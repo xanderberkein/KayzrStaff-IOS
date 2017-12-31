@@ -673,7 +673,7 @@
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="j5C-yN-NKc" id="54a-F9-Eql"/>
-                                            <outlet property="gameImage" destination="Xwq-cg-GLZ" id="yp2-1W-P36"/>
+                                            <outlet property="gameImage" destination="Xwq-cg-GLZ" id="abX-VZ-dj7"/>
                                             <outlet property="moderatorLabel" destination="5Rx-pq-yLJ" id="rsi-WT-knZ"/>
                                             <outlet property="nameLabel" destination="WQn-tI-F6b" id="E0z-nE-cyG"/>
                                             <outlet property="startTimeLabel" destination="LXw-bG-BXU" id="lH3-xx-heO"/>

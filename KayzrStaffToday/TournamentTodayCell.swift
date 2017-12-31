@@ -48,6 +48,8 @@ class TournamentTodayCell : UITableViewCell {
                 gameImage.image = #imageLiteral(resourceName: "SCIIToday")
             } else if tournament.nameShort.contains("COD") {
                 gameImage.image = #imageLiteral(resourceName: "CODToday")
+            }else if tournament.nameShort.contains("BR") {
+                    gameImage.image = #imageLiteral(resourceName: "battleriteToday")
             } else {
                 gameImage.image = #imageLiteral(resourceName: "iconToday")
             }
