@@ -19,6 +19,7 @@ class AvailabilityViewController : UIViewController {
     var gotTournaments = false
     var tournaments : [Tournament] = []
     var availabilitiesForDay = [Int : [Availability]]()
+    var availabilitiesSend = 0
     
     override func viewDidLoad() {
         // eerst de user uit de realm gaan halen
@@ -31,7 +32,7 @@ class AvailabilityViewController : UIViewController {
             self.availabiltiesOfTheUser = self.availabiltiesOfTheUser?.filter(){
                 $0.moderator == self.savedUser!.first!.username
             }
-            // maak methode die hier opgeroepen wordt en hieronder ook met dan de validatie voor de av
+            // van zodra ik de availabilities en de tournaments heb kan ik deze controleren en toevoegen
             self.gotAvailabilities = true
             self.calculateAvailabilities()
         }
@@ -47,7 +48,7 @@ class AvailabilityViewController : UIViewController {
     }
     
     @IBAction func sendAvailabilities() {
-        print("sending AV")
+        availabilitiesSend = 0
         var avToSend : [Availability] = []
         for i in 0 ... 6 {
             for av in availabilitiesForDay[i]! {
@@ -56,13 +57,31 @@ class AvailabilityViewController : UIViewController {
                 }
             }
         }
-        print(avToSend.count)
         
         Alamofire.request("http://kayzrstaff.com/api/ClearAV/?Mod=\(savedUser!.first!.username)&Key=8w03QQ2ByD6vxZEPSBjPJR89SeQhoR8C", method: .get).response {_ in
             for av in avToSend {
-                Alamofire.request("http://kayzrstaff.com/api/SendAV/?Mod=\(self.savedUser!.first!.username)&Id=\(av.id)&Key=8w03QQ2ByD6vxZEPSBjPJR89SeQhoR8C", method: .get)
+                Alamofire.request("http://kayzrstaff.com/api/SendAV/?Mod=\(self.savedUser!.first!.username)&Id=\(av.id)&Key=8w03QQ2ByD6vxZEPSBjPJR89SeQhoR8C", method: .get).response{ _ in
+                    self.availabilitiesSend += 1
+                    if self.availabilitiesSend == avToSend.count {
+                        let alert = UIAlertController(title: "Availabilities send",
+                                                      message: "\(self.availabilitiesSend) / \(avToSend.count) " +
+                            "\(avToSend.count > 1 ? "availabilities have" : "availability has") been sent.",
+                                                      preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                        self.present(alert, animated: true)
+                    }
+                }
+            }
+            
+            if self.availabilitiesSend == 0 && avToSend.count == 0{
+                let alert = UIAlertController(title: "Availabilities send",
+                                              message: "no availabilities have been sent!",
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true)
             }
         }
+        
         tabBarController?.selectedIndex = 0
     }
     
