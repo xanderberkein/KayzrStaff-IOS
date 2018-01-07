@@ -39,7 +39,7 @@ class LoginUserViewController : UIViewController {
                 //pasword was already encrypted
                 performSegue(withIdentifier: "MainAppSegue", sender: self)
             } else {
-                // using of the code of https://github.com/krzyzanowskim/CryptoSwift to encrypt the password which is added in the podfile
+                // Source: https://github.com/krzyzanowskim/CryptoSwift to encrypt the password which is added in the podfile
                 decryptedPassword = passwordField.text!.sha256()
                 
                 if decryptedPassword == user!.password {

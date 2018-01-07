@@ -207,7 +207,7 @@ extension AvailabilityViewController: UITableViewDelegate {
     }
 }
 extension Date {
-    // found this on stackoverflow: https://stackoverflow.com/questions/33397101/how-to-get-mondays-date-of-the-current-week-in-swift
+    // Source: https://stackoverflow.com/questions/33397101/how-to-get-mondays-date-of-the-current-week-in-swift
     // ik heb het wel aangepast en uitgebreid zodat ik elke dag van de volgende week krijg
     public var maandag: Date? {
         let gregorian = Calendar(identifier: .gregorian)
