@@ -29,7 +29,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 self.tournaments = $0!
                 
                 self.tournaments = self.tournaments.filter(){
-                    $0.moderator == username
+                    $0.moderator.range(of: username!) != nil
                 }
                 
                 for t in self.tournaments {

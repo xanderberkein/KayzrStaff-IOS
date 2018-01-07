@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
             self.tournamentsToModerate = $0!
             
             self.tournamentsToModerate = self.tournamentsToModerate.filter(){
-                $0.moderator == self.user.username
+                 $0.moderator.range(of: self.user.username) != nil
             }
             
             if self.tournamentsToModerate.count == 0 {
