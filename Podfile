@@ -4,6 +4,8 @@ target 'KayzrStaff_Shared' do
   use_frameworks!
   pod 'RealmSwift', '~> 3.0'
   pod 'Alamofire', '~> 4.5'
+  pod 'Fabric'
+  pod 'Crashlytics'
 end
 
 target 'KayzrStaff' do
