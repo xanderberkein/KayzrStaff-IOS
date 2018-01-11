@@ -22,22 +22,47 @@ class LoginUserViewController : UIViewController {
         usernameField.text = savedUser?.first?.username
         passwordField.text = savedUser?.first?.password
         if  savedUser?.first != nil {
-            getTheUser(username: savedUser!.first!.username)
+            getTheUser(username: savedUser!.first!.username, checkuser: false)
         }
         usernameField.becomeFirstResponder()
         loginButton.layer.cornerRadius = 5
     }
     
     @IBAction func logUserIn() {
-        
+        getTheUser(username: usernameField.text!, checkuser: true)
+       
+    }
+    
+    @IBAction func moveFocusToPassword() {
+        usernameField.resignFirstResponder()
+        passwordField.becomeFirstResponder()
+    }
+    
+    
+    
+    private func getTheUser(username: String, checkuser: Bool) {
+        userTask?.cancel()
+        userTask = KayzrStaffAPI.getUser(for: username ) {
+            self.user = $0
+            if checkuser {
+                self.checkUserAndPerformSegue()
+            }
+            
+        }
+        userTask!.resume()
+    }
+    
+    private func checkUserAndPerformSegue(){
         if user == nil  {
             let alert = UIAlertController(title: "User Not found", message: "We did not find user: \(usernameField.text ?? "")", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true)
+            
         } else {
             if passwordField.text! == user!.password {
                 //pasword was already encrypted
                 performSegue(withIdentifier: "MainAppSegue", sender: self)
+                
             } else {
                 // Source: https://github.com/krzyzanowskim/CryptoSwift to encrypt the password which is added in the podfile
                 decryptedPassword = passwordField.text!.sha256()
@@ -53,23 +78,6 @@ class LoginUserViewController : UIViewController {
                 }
             }
         }
-    }
-    
-    @IBAction func moveFocusToPassword() {
-        getTheUser(username: usernameField.text!)
-        usernameField.resignFirstResponder()
-        passwordField.becomeFirstResponder()
-    }
-    
-    
-    
-    private func getTheUser(username: String) {
-        userTask?.cancel()
-        userTask = KayzrStaffAPI.getUser(for: username ) {
-            self.user = $0
-            
-        }
-        userTask!.resume()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
