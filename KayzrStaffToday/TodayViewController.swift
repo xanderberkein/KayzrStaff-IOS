@@ -16,7 +16,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     var tournaments: [Tournament] = []
     var tournamentsToday :  [Tournament] = []
     private var tournamentTask: URLSessionTask?
-    private let userDefaults = UserDefaults(suiteName: "group.KayzrStaffToday")!
+    private let userDefaults = UserDefaults(suiteName: "group.mafken.kayzrstaff")!
     
     override func viewDidLoad() {
         var username : String?

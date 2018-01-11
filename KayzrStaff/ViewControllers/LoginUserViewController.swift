@@ -10,7 +10,7 @@ class LoginUserViewController : UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     private var userTask: URLSessionTask?
-    private let userDefaults = UserDefaults(suiteName: "group.KayzrStaffToday")!
+    private let userDefaults = UserDefaults(suiteName: "group.mafken.kayzrstaff")!
     
     var team : [User]!
     var savedUser : Results<User>?
