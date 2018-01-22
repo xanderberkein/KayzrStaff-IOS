@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57813FB62787D939F7C2165A /* Pods_KayzrStaffToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40C3DE379F4CF29E97DFF32 /* Pods_KayzrStaffToday.framework */; };
+		4C1A6ED2C74433294C7D60B8 /* Pods_KayzrStaff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2E74601CC7585F848C2A3C /* Pods_KayzrStaff.framework */; };
+		69167142479B48CA3F8B26C4 /* Pods_KayzrStaffToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B6A101A36695F090EFCC6C /* Pods_KayzrStaffToday.framework */; };
 		6B75677F1FDABC94006FD504 /* KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; };
 		6B7567831FDAE186006FD504 /* KayzrStaffAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7567821FDAE186006FD504 /* KayzrStaffAPI.swift */; };
 		6BF6564E1FD6C27700A943B8 /* games.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF6564D1FD6C27700A943B8 /* games.xcassets */; };
@@ -37,8 +38,7 @@
 		6BFE54D01FD6AFEE001F127F /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54751FD6A0B3001F127F /* Availability.swift */; };
 		6BFE54D11FD6AFEE001F127F /* EndWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE54771FD6A0C0001F127F /* EndWeek.swift */; };
 		6BFE54D21FD6B06B001F127F /* KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */; };
-		C5DD00057D6893E961FC2252 /* Pods_KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15CB62DF0C0CD21A1FDB132 /* Pods_KayzrStaff_Shared.framework */; };
-		F5789AED82043E85E975FFE2 /* Pods_KayzrStaff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A43ADA71A0F0698F37500AF /* Pods_KayzrStaff.framework */; };
+		91FA032E2A39969258E0EE6E /* Pods_KayzrStaff_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC16FCA119109F69E02558A /* Pods_KayzrStaff_Shared.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,8 +98,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D84CCABB4CCC68B2B49298C /* Pods-KayzrStaff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.debug.xcconfig"; sourceTree = "<group>"; };
-		1A43ADA71A0F0698F37500AF /* Pods_KayzrStaff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C96FF673DEE85E58FB74F50 /* Pods-KayzrStaff_Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff_Shared.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared.debug.xcconfig"; sourceTree = "<group>"; };
+		3C723217692D33CEE0764A83 /* Pods-KayzrStaffToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaffToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday.release.xcconfig"; sourceTree = "<group>"; };
 		6B0DFE5C1FD82082003CFEA3 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0DFE5D1FD82082003CFEA3 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0DFE5F1FD82176003CFEA3 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,13 +142,13 @@
 		6BFE54BF1FD6AFC0001F127F /* KayzrStaff_Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KayzrStaff_Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFE54C11FD6AFC0001F127F /* KayzrStaff_Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KayzrStaff_Shared.h; sourceTree = "<group>"; };
 		6BFE54C21FD6AFC0001F127F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72AC5EA54E164E439F17D533 /* Pods-KayzrStaff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.release.xcconfig"; sourceTree = "<group>"; };
-		77E919739C6179452601CCD2 /* Pods-KayzrStaffToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaffToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday.release.xcconfig"; sourceTree = "<group>"; };
-		A09B0D184042ECB516C4F149 /* Pods-KayzrStaffToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaffToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday.debug.xcconfig"; sourceTree = "<group>"; };
-		B15CB62DF0C0CD21A1FDB132 /* Pods_KayzrStaff_Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff_Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C40C3DE379F4CF29E97DFF32 /* Pods_KayzrStaffToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaffToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF5DDDDDFE086DEA0DC15119 /* Pods-KayzrStaff_Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff_Shared.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared.debug.xcconfig"; sourceTree = "<group>"; };
-		F8F30F2BCA96B2B5C2E65A0A /* Pods-KayzrStaff_Shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff_Shared.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared.release.xcconfig"; sourceTree = "<group>"; };
+		75D38D04F63B97DD532D8A81 /* Pods-KayzrStaff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.debug.xcconfig"; sourceTree = "<group>"; };
+		884C85513AF6A47ACCFFDA73 /* Pods-KayzrStaffToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaffToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday.debug.xcconfig"; sourceTree = "<group>"; };
+		92B6A101A36695F090EFCC6C /* Pods_KayzrStaffToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaffToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950B65DA20A906F421AFCB27 /* Pods-KayzrStaff_Shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff_Shared.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared.release.xcconfig"; sourceTree = "<group>"; };
+		AFC16FCA119109F69E02558A /* Pods_KayzrStaff_Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff_Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CFB7E845A1EDD5BA3FD566 /* Pods-KayzrStaff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KayzrStaff.release.xcconfig"; path = "Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff.release.xcconfig"; sourceTree = "<group>"; };
+		DC2E74601CC7585F848C2A3C /* Pods_KayzrStaff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KayzrStaff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +156,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5789AED82043E85E975FFE2 /* Pods_KayzrStaff.framework in Frameworks */,
 				6B75677F1FDABC94006FD504 /* KayzrStaff_Shared.framework in Frameworks */,
+				4C1A6ED2C74433294C7D60B8 /* Pods_KayzrStaff.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			files = (
 				6BFE54D21FD6B06B001F127F /* KayzrStaff_Shared.framework in Frameworks */,
 				6BFE54A71FD6A78D001F127F /* NotificationCenter.framework in Frameworks */,
-				57813FB62787D939F7C2165A /* Pods_KayzrStaffToday.framework in Frameworks */,
+				69167142479B48CA3F8B26C4 /* Pods_KayzrStaffToday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,26 +189,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5DD00057D6893E961FC2252 /* Pods_KayzrStaff_Shared.framework in Frameworks */,
+				91FA032E2A39969258E0EE6E /* Pods_KayzrStaff_Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6074E426CBE086FA2504107D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0D84CCABB4CCC68B2B49298C /* Pods-KayzrStaff.debug.xcconfig */,
-				72AC5EA54E164E439F17D533 /* Pods-KayzrStaff.release.xcconfig */,
-				A09B0D184042ECB516C4F149 /* Pods-KayzrStaffToday.debug.xcconfig */,
-				77E919739C6179452601CCD2 /* Pods-KayzrStaffToday.release.xcconfig */,
-				DF5DDDDDFE086DEA0DC15119 /* Pods-KayzrStaff_Shared.debug.xcconfig */,
-				F8F30F2BCA96B2B5C2E65A0A /* Pods-KayzrStaff_Shared.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6B0A469E1FD748E50025F343 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +212,7 @@
 				6BFE54C01FD6AFC0001F127F /* KayzrStaff_Shared */,
 				6BFE54A51FD6A78D001F127F /* Frameworks */,
 				6BFE541C1FD69D8A001F127F /* Products */,
-				6074E426CBE086FA2504107D /* Pods */,
+				D597E12964CC122ACFEA2043 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -301,9 +288,9 @@
 				6B0DFE5C1FD82082003CFEA3 /* Realm.framework */,
 				6B0DFE5D1FD82082003CFEA3 /* RealmSwift.framework */,
 				6BFE54A61FD6A78D001F127F /* NotificationCenter.framework */,
-				1A43ADA71A0F0698F37500AF /* Pods_KayzrStaff.framework */,
-				C40C3DE379F4CF29E97DFF32 /* Pods_KayzrStaffToday.framework */,
-				B15CB62DF0C0CD21A1FDB132 /* Pods_KayzrStaff_Shared.framework */,
+				DC2E74601CC7585F848C2A3C /* Pods_KayzrStaff.framework */,
+				92B6A101A36695F090EFCC6C /* Pods_KayzrStaffToday.framework */,
+				AFC16FCA119109F69E02558A /* Pods_KayzrStaff_Shared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,6 +320,19 @@
 			path = KayzrStaff_Shared;
 			sourceTree = "<group>";
 		};
+		D597E12964CC122ACFEA2043 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D38D04F63B97DD532D8A81 /* Pods-KayzrStaff.debug.xcconfig */,
+				C9CFB7E845A1EDD5BA3FD566 /* Pods-KayzrStaff.release.xcconfig */,
+				884C85513AF6A47ACCFFDA73 /* Pods-KayzrStaffToday.debug.xcconfig */,
+				3C723217692D33CEE0764A83 /* Pods-KayzrStaffToday.release.xcconfig */,
+				2C96FF673DEE85E58FB74F50 /* Pods-KayzrStaff_Shared.debug.xcconfig */,
+				950B65DA20A906F421AFCB27 /* Pods-KayzrStaff_Shared.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -351,15 +351,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BFE54431FD69D8B001F127F /* Build configuration list for PBXNativeTarget "KayzrStaff" */;
 			buildPhases = (
-				1A0FCC16F4A51F4AF7D2E7D4 /* [CP] Check Pods Manifest.lock */,
+				E08E865D79AD8CC6B1892C87 /* [CP] Check Pods Manifest.lock */,
 				6BFE54171FD69D8A001F127F /* Sources */,
 				6BFE54181FD69D8A001F127F /* Frameworks */,
 				6BFE54191FD69D8A001F127F /* Resources */,
 				6BFE549F1FD6A6F3001F127F /* Embed App Extensions */,
 				6BFE54CB1FD6AFC0001F127F /* Embed Frameworks */,
-				D9A91134A21DA22333E2CA29 /* [CP] Embed Pods Frameworks */,
-				0A16BB01D53CB5DCD2E111D7 /* [CP] Copy Pods Resources */,
 				34782AA92006CE780030C2BD /* ShellScript */,
+				1B6DE05DFFF9AE291C67B070 /* [CP] Embed Pods Frameworks */,
+				0D54F76C7343F3CDD052B6C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -412,11 +412,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BFE54B21FD6A78D001F127F /* Build configuration list for PBXNativeTarget "KayzrStaffToday" */;
 			buildPhases = (
-				024B89D1D8E4E945DFDD6B3B /* [CP] Check Pods Manifest.lock */,
+				23966F2081ADF0DA645F2761 /* [CP] Check Pods Manifest.lock */,
 				6BFE54A01FD6A78D001F127F /* Sources */,
 				6BFE54A11FD6A78D001F127F /* Frameworks */,
 				6BFE54A21FD6A78D001F127F /* Resources */,
-				8AB2947483AE5851E8FC8644 /* [CP] Copy Pods Resources */,
+				F29C9F917A488CDD69D6E403 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -431,12 +431,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BFE54C81FD6AFC0001F127F /* Build configuration list for PBXNativeTarget "KayzrStaff_Shared" */;
 			buildPhases = (
-				7E6141270E6AE8B9F471B85D /* [CP] Check Pods Manifest.lock */,
+				1D0EC7FF762D76E57E9AC682 /* [CP] Check Pods Manifest.lock */,
 				6BFE54BA1FD6AFC0001F127F /* Sources */,
 				6BFE54BB1FD6AFC0001F127F /* Frameworks */,
 				6BFE54BC1FD6AFC0001F127F /* Headers */,
 				6BFE54BD1FD6AFC0001F127F /* Resources */,
-				AC4A0D9BD53B97D42831D236 /* [CP] Copy Pods Resources */,
+				56F5CDB26F924B405B55E40E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -459,7 +459,7 @@
 				TargetAttributes = {
 					6BFE541A1FD69D8A001F127F = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -478,7 +478,7 @@
 					};
 					6BFE54A31FD6A78D001F127F = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -557,25 +557,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		024B89D1D8E4E945DFDD6B3B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KayzrStaffToday-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0A16BB01D53CB5DCD2E111D7 /* [CP] Copy Pods Resources */ = {
+		0D54F76C7343F3CDD052B6C2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -590,86 +572,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1A0FCC16F4A51F4AF7D2E7D4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KayzrStaff-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		34782AA92006CE780030C2BD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3e629f5fd5a671a949f8d33c09c5639aa50e110d c0d6e017eaebf4fcefebf68e1248c2353dfca84a5a2e8e332249c8de79bae463";
-		};
-		7E6141270E6AE8B9F471B85D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KayzrStaff_Shared-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8AB2947483AE5851E8FC8644 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC4A0D9BD53B97D42831D236 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D9A91134A21DA22333E2CA29 /* [CP] Embed Pods Frameworks */ = {
+		1B6DE05DFFF9AE291C67B070 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -691,6 +594,103 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff/Pods-KayzrStaff-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D0EC7FF762D76E57E9AC682 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KayzrStaff_Shared-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23966F2081ADF0DA645F2761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KayzrStaffToday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34782AA92006CE780030C2BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3e629f5fd5a671a949f8d33c09c5639aa50e110d c0d6e017eaebf4fcefebf68e1248c2353dfca84a5a2e8e332249c8de79bae463";
+		};
+		56F5CDB26F924B405B55E40E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaff_Shared/Pods-KayzrStaff_Shared-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E08E865D79AD8CC6B1892C87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KayzrStaff-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F29C9F917A488CDD69D6E403 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KayzrStaffToday/Pods-KayzrStaffToday-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -851,7 +851,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -905,7 +905,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -917,17 +917,21 @@
 		};
 		6BFE54441FD69D8B001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D84CCABB4CCC68B2B49298C /* Pods-KayzrStaff.debug.xcconfig */;
+			baseConfigurationReference = 75D38D04F63B97DD532D8A81 /* Pods-KayzrStaff.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KayzrStaff/KayzrStaff.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2VGECRP7TH;
 				INFOPLIST_FILE = KayzrStaff/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mafken.kayzr.kayzrstaff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a47af07b-2a10-4aeb-8b9f-5c2c2f8808df";
+				PROVISIONING_PROFILE_SPECIFIER = KayzrStaff;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -935,17 +939,21 @@
 		};
 		6BFE54451FD69D8B001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72AC5EA54E164E439F17D533 /* Pods-KayzrStaff.release.xcconfig */;
+			baseConfigurationReference = C9CFB7E845A1EDD5BA3FD566 /* Pods-KayzrStaff.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KayzrStaff/KayzrStaff.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2VGECRP7TH;
 				INFOPLIST_FILE = KayzrStaff/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mafken.kayzr.kayzrstaff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a47af07b-2a10-4aeb-8b9f-5c2c2f8808df";
+				PROVISIONING_PROFILE_SPECIFIER = KayzrStaff;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1019,15 +1027,19 @@
 		};
 		6BFE54B31FD6A78D001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A09B0D184042ECB516C4F149 /* Pods-KayzrStaffToday.debug.xcconfig */;
+			baseConfigurationReference = 884C85513AF6A47ACCFFDA73 /* Pods-KayzrStaffToday.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KayzrStaffToday/KayzrStaffToday.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2VGECRP7TH;
 				INFOPLIST_FILE = KayzrStaffToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mafken.kayzr.kayzrstaff.kayzrstafftoday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3222767f-cbde-4755-bdaa-b69f96fb88b9";
+				PROVISIONING_PROFILE_SPECIFIER = "KayzrStaff Today";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1036,15 +1048,19 @@
 		};
 		6BFE54B41FD6A78D001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77E919739C6179452601CCD2 /* Pods-KayzrStaffToday.release.xcconfig */;
+			baseConfigurationReference = 3C723217692D33CEE0764A83 /* Pods-KayzrStaffToday.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = KayzrStaffToday/KayzrStaffToday.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2VGECRP7TH;
 				INFOPLIST_FILE = KayzrStaffToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mafken.kayzr.kayzrstaff.kayzrstafftoday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3222767f-cbde-4755-bdaa-b69f96fb88b9";
+				PROVISIONING_PROFILE_SPECIFIER = "KayzrStaff Today";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1053,23 +1069,26 @@
 		};
 		6BFE54C91FD6AFC0001F127F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF5DDDDDFE086DEA0DC15119 /* Pods-KayzrStaff_Shared.debug.xcconfig */;
+			baseConfigurationReference = 2C96FF673DEE85E58FB74F50 /* Pods-KayzrStaff_Shared.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3VJFXM46G9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KayzrStaff_Shared/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mafken.KayzrStaff-Shared";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1080,23 +1099,26 @@
 		};
 		6BFE54CA1FD6AFC0001F127F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8F30F2BCA96B2B5C2E65A0A /* Pods-KayzrStaff_Shared.release.xcconfig */;
+			baseConfigurationReference = 950B65DA20A906F421AFCB27 /* Pods-KayzrStaff_Shared.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3VJFXM46G9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KayzrStaff_Shared/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mafken.KayzrStaff-Shared";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

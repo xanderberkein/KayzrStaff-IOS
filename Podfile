@@ -1,4 +1,4 @@
-platform :ios, '11.1'
+platform :ios, '10.3'
 
 target 'KayzrStaff_Shared' do
   use_frameworks!
